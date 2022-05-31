@@ -1,0 +1,92 @@
+.nav-item {
+	cursor: pointer;
+}
+
+.slicknav_btn {
+	border: none;
+}
+
+.burger {
+	margin-top: 5px;
+	border: 1px solid rgb(238, 110, 5);
+	padding: 5px 20px 20px 5px;
+	color: #000;
+	background: rgba(240, 158, 51, 0.7);
+	min-width: 180px;
+	position: absolute;
+	right: 0;
+	z-index: 15;
+	display: none;
+}
+
+.burger a {
+	color: rgb(0, 0, 0);
+}
+
+.submenu {
+	margin-left: 15px;
+	color: antiquewhite;
+}
+
+.submenu a {
+	color: rgb(47, 28, 2);
+}
+
+
+
+.wrapper-modal {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.wrapper-modal.active {
+	display: block;
+}
+.form-book {
+	width: 500px;
+}
+
+.title-form {
+	font-size: 20px;
+	font-weight: 700;
+}
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background: #fff;
+	left: 0;
+	top: 0;
+}
+.popup-window {
+	display: flex;
+	position: absolute;
+	z-index: 5;
+	left: 35%;
+	top: 300px;
+	border-radius: 10px;
+	background: #fff;
+	padding: 30px 28px;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+}
+
+.close-btn{
+	cursor: pointer;
+	margin-left: auto;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+@media (max-width: 992px) {
+	.submenu {
+		display: none;
+	}
+	
+	.blog:active .submenu {
+	display: block;
+	}
+}
